@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "stagebot_2dnav")
+set(stagebot_2dnav_MAINTAINER "jchu2041 <jchu2041@todo.todo>")
+set(stagebot_2dnav_DEPRECATED "")
+set(stagebot_2dnav_VERSION "0.0.0")
+set(stagebot_2dnav_BUILD_DEPENDS "gmapping" "move_base")
+set(stagebot_2dnav_RUN_DEPENDS "gmapping" "move_base")
+set(stagebot_2dnav_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,8 @@
+prefix=/home/loren/Workspaces/final_catkin/install
+
+Name: simple_navigation_goals
+Description: Description of simple_navigation_goals
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/loren/Workspaces/final_catkin/install/lib 
+Requires: 

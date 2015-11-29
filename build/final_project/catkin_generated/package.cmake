@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "final_project")
+set(final_project_MAINTAINER "loren <loren@todo.todo>")
+set(final_project_DEPRECATED "")
+set(final_project_VERSION "0.0.0")
+set(final_project_BUILD_DEPENDS "gmapping" "move_base" "roscpp" "rospy")
+set(final_project_RUN_DEPENDS "gmapping" "move_base" "roscpp" "rospy")
+set(final_project_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,8 @@
+prefix=/home/loren/Workspaces/final_catkin/install
+
+Name: final_project
+Description: Description of final_project
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/loren/Workspaces/final_catkin/install/lib 
+Requires: 

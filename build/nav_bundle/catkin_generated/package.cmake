@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "nav_bundle")
+set(nav_bundle_MAINTAINER "loren <loren@todo.todo>")
+set(nav_bundle_DEPRECATED "")
+set(nav_bundle_VERSION "0.0.0")
+set(nav_bundle_BUILD_DEPENDS "gmapping" "move_base")
+set(nav_bundle_RUN_DEPENDS "gmapping" "move_base")
+set(nav_bundle_BUILDTOOL_DEPENDS "catkin")

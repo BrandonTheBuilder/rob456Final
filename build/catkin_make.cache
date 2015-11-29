@@ -1,0 +1,2 @@
+final_project:frontier_exploration:nav_bundle:simple_navigation_goals:stagebot_2dnav
+-DCATKIN_DEVEL_PREFIX=/home/loren/Workspaces/final_catkin/devel -DCMAKE_INSTALL_PREFIX=/home/loren/Workspaces/final_catkin/install -G Unix Makefiles
