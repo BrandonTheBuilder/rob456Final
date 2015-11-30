@@ -32,39 +32,60 @@
 #include <costmap_2d/costmap_2d_ros.h>
 #include <hector_nav_msgs/GetRobotTrajectory.h>
 
+class SimpleExplorationPlanner
+{
+public:
+  SimpleExplorationPlanner()
+  {
+    ros::NodeHandle nh;
 
-int main(int argc, char **argv) {
-  ros::init(argc, argv, ROS_PACKAGE_NAME);
+    costmap_2d_ros_ = new costmap_2d::Costmap2DROS("global_costmap", tfl_);
 
-  ros::NodeHandle nh;
-  hector_exploration_planner::HectorExplorationPlanner* planner_;
-  ros::ServiceServer exploration_plan_service_server_;
-  ros::Publisher exploration_plan_pub_;
-  costmap_2d::Costmap2DROS* costmap_2d_ros_;
-  tf::TransformListener tfl_;
-  
-  costmap_2d_ros_ = new costmap_2d::Costmap2DROS("global_costmap", tfl_);
+    planner_ = new hector_exploration_planner::HectorExplorationPlanner();
+    planner_->initialize("hector_exploration_planner",costmap_2d_ros_);
 
-  planner_ = new hector_exploration_planner::HectorExplorationPlanner();
-  planner_->initialize("hector_exploration_planner",costmap_2d_ros_);
-  exploration_plan_pub_ = nh.advertise<nav_msgs::Path>("exploration_path",2);
-  ros::Rate loop_rate(0.25);
-  while(ros::ok())
+    exploration_plan_service_server_ = nh.advertiseService("get_exploration_path", &SimpleExplorationPlanner::explorationServiceCallback, this);
+
+    exploration_plan_pub_ = nh.advertise<nav_msgs::Path>("exploration_path",2);
+  }
+
+  bool explorationServiceCallback(hector_nav_msgs::GetRobotTrajectory::Request  &req,
+                                  hector_nav_msgs::GetRobotTrajectory::Response &res )
     {
-      ROS_WARN("Exploration Service called");
+      ROS_INFO("Exploration Service called");
+
       tf::Stamped<tf::Pose> robot_pose_tf;
-      hector_nav_msgs::GetRobotTrajectory::Response res;
       costmap_2d_ros_->getRobotPose(robot_pose_tf);
+
       geometry_msgs::PoseStamped pose;
       tf::poseStampedTFToMsg(robot_pose_tf, pose);
       planner_->doExploration(pose, res.trajectory.poses);
       res.trajectory.header.frame_id = "map";
       res.trajectory.header.stamp = ros::Time::now();
-      exploration_plan_pub_.publish(res.trajectory);
-      ros::spinOnce();
-      loop_rate.sleep();
+
+      if (exploration_plan_pub_.getNumSubscribers() > 0)
+      {
+        exploration_plan_pub_.publish(res.trajectory);
+      }
+
+      return true;
     }
-  
+
+protected:
+  hector_exploration_planner::HectorExplorationPlanner* planner_;
+  ros::ServiceServer exploration_plan_service_server_;
+  ros::Publisher exploration_plan_pub_;
+  costmap_2d::Costmap2DROS* costmap_2d_ros_;
+  tf::TransformListener tfl_;
+
+};
+
+int main(int argc, char **argv) {
+  ros::init(argc, argv, ROS_PACKAGE_NAME);
+
+  SimpleExplorationPlanner ep;
+
+  ros::spin();
 
   return 0;
 }
