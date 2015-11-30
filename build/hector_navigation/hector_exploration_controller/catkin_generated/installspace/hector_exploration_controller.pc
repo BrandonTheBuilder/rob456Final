@@ -1,0 +1,8 @@
+prefix=/home/loren/Workspaces/final_catkin/install
+
+Name: hector_exploration_controller
+Description: Description of hector_exploration_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/loren/Workspaces/final_catkin/install/lib 
+Requires: 

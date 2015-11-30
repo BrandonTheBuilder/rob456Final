@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "hector_elevation_msgs")
+set(hector_elevation_msgs_MAINTAINER "Stefan Kohlbrecher <kohlbrecher@sim.tu-darmstadt.de>")
+set(hector_elevation_msgs_DEPRECATED "")
+set(hector_elevation_msgs_VERSION "0.0.0")
+set(hector_elevation_msgs_BUILD_DEPENDS "geometry_msgs" "std_msgs" "message_generation")
+set(hector_elevation_msgs_RUN_DEPENDS "message_runtime" "geometry_msgs" "std_msgs")
+set(hector_elevation_msgs_BUILDTOOL_DEPENDS "catkin")

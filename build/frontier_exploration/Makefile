@@ -360,48 +360,6 @@ _run_tests_frontier_exploration_gtest_geometry_tools_tests/fast:
 .PHONY : _run_tests_frontier_exploration_gtest_geometry_tools_tests/fast
 
 # Convenience name for target.
-frontier_exploration/CMakeFiles/bond_generate_messages_cpp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/bond_generate_messages_cpp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/bond_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_cpp: frontier_exploration/CMakeFiles/bond_generate_messages_cpp.dir/rule
-.PHONY : bond_generate_messages_cpp
-
-# fast build rule for target.
-bond_generate_messages_cpp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/bond_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/bond_generate_messages_cpp.dir/build
-.PHONY : bond_generate_messages_cpp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/bond_generate_messages_lisp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/bond_generate_messages_lisp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/bond_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_lisp: frontier_exploration/CMakeFiles/bond_generate_messages_lisp.dir/rule
-.PHONY : bond_generate_messages_lisp
-
-# fast build rule for target.
-bond_generate_messages_lisp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/bond_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/bond_generate_messages_lisp.dir/build
-.PHONY : bond_generate_messages_lisp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/bond_generate_messages_py.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/bond_generate_messages_py.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/bond_generate_messages_py.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_py: frontier_exploration/CMakeFiles/bond_generate_messages_py.dir/rule
-.PHONY : bond_generate_messages_py
-
-# fast build rule for target.
-bond_generate_messages_py/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/bond_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/bond_generate_messages_py.dir/build
-.PHONY : bond_generate_messages_py/fast
-
-# Convenience name for target.
 frontier_exploration/CMakeFiles/costmap_2d_gencfg.dir/rule:
 	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/costmap_2d_gencfg.dir/rule
 .PHONY : frontier_exploration/CMakeFiles/costmap_2d_gencfg.dir/rule
@@ -470,62 +428,6 @@ costmap_tools_tests: frontier_exploration/CMakeFiles/costmap_tools_tests.dir/rul
 costmap_tools_tests/fast:
 	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/costmap_tools_tests.dir/build.make frontier_exploration/CMakeFiles/costmap_tools_tests.dir/build
 .PHONY : costmap_tools_tests/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_gencfg: frontier_exploration/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make frontier_exploration/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_lisp: frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_lisp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_py: frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_py
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_py/fast
 
 # Convenience name for target.
 frontier_exploration/CMakeFiles/explore_client.dir/rule:
@@ -682,48 +584,6 @@ frontier_search_tests/fast:
 .PHONY : frontier_search_tests/fast
 
 # Convenience name for target.
-frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 frontier_exploration/CMakeFiles/geometry_tools_tests.dir/rule:
 	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/geometry_tools_tests.dir/rule
 .PHONY : frontier_exploration/CMakeFiles/geometry_tools_tests.dir/rule
@@ -778,146 +638,6 @@ map_msgs_generate_messages_py: frontier_exploration/CMakeFiles/map_msgs_generate
 map_msgs_generate_messages_py/fast:
 	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/map_msgs_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/map_msgs_generate_messages_py.dir/build
 .PHONY : map_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_cpp: frontier_exploration/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-.PHONY : nav_msgs_generate_messages_cpp
-
-# fast build rule for target.
-nav_msgs_generate_messages_cpp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
-.PHONY : nav_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_lisp: frontier_exploration/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_py: frontier_exploration/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : nav_msgs_generate_messages_py
-
-# fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_cpp: frontier_exploration/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
-.PHONY : nodelet_generate_messages_cpp
-
-# fast build rule for target.
-nodelet_generate_messages_cpp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/nodelet_generate_messages_cpp.dir/build
-.PHONY : nodelet_generate_messages_cpp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_lisp: frontier_exploration/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-.PHONY : nodelet_generate_messages_lisp
-
-# fast build rule for target.
-nodelet_generate_messages_lisp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/nodelet_generate_messages_lisp.dir/build
-.PHONY : nodelet_generate_messages_lisp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/nodelet_generate_messages_py.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/nodelet_generate_messages_py.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/nodelet_generate_messages_py.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_py: frontier_exploration/CMakeFiles/nodelet_generate_messages_py.dir/rule
-.PHONY : nodelet_generate_messages_py
-
-# fast build rule for target.
-nodelet_generate_messages_py/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/nodelet_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/nodelet_generate_messages_py.dir/build
-.PHONY : nodelet_generate_messages_py/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-pcl_msgs_generate_messages_cpp: frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
-.PHONY : pcl_msgs_generate_messages_cpp
-
-# fast build rule for target.
-pcl_msgs_generate_messages_cpp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
-.PHONY : pcl_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-pcl_msgs_generate_messages_lisp: frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
-.PHONY : pcl_msgs_generate_messages_lisp
-
-# fast build rule for target.
-pcl_msgs_generate_messages_lisp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
-.PHONY : pcl_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-pcl_msgs_generate_messages_py: frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
-.PHONY : pcl_msgs_generate_messages_py
-
-# fast build rule for target.
-pcl_msgs_generate_messages_py/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
-.PHONY : pcl_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/pcl_ros_gencfg.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/pcl_ros_gencfg.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/pcl_ros_gencfg.dir/rule
-
-# Convenience name for target.
-pcl_ros_gencfg: frontier_exploration/CMakeFiles/pcl_ros_gencfg.dir/rule
-.PHONY : pcl_ros_gencfg
-
-# fast build rule for target.
-pcl_ros_gencfg/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/pcl_ros_gencfg.dir/build.make frontier_exploration/CMakeFiles/pcl_ros_gencfg.dir/build
-.PHONY : pcl_ros_gencfg/fast
 
 # Convenience name for target.
 frontier_exploration/CMakeFiles/run_tests_frontier_exploration.dir/rule:
@@ -988,216 +708,6 @@ run_tests_frontier_exploration_gtest_geometry_tools_tests: frontier_exploration/
 run_tests_frontier_exploration_gtest_geometry_tools_tests/fast:
 	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/run_tests_frontier_exploration_gtest_geometry_tools_tests.dir/build.make frontier_exploration/CMakeFiles/run_tests_frontier_exploration_gtest_geometry_tools_tests.dir/build
 .PHONY : run_tests_frontier_exploration_gtest_geometry_tools_tests/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_cpp: frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : tf2_msgs_generate_messages_cpp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_lisp: frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_py: frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_cpp: frontier_exploration/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/tf_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_lisp: frontier_exploration/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/tf_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/tf_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_py: frontier_exploration/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/tf_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_cpp: frontier_exploration/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_lisp: frontier_exploration/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-.PHONY : topic_tools_generate_messages_lisp
-
-# fast build rule for target.
-topic_tools_generate_messages_lisp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
-.PHONY : topic_tools_generate_messages_lisp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_py: frontier_exploration/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-.PHONY : topic_tools_generate_messages_py
-
-# fast build rule for target.
-topic_tools_generate_messages_py/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/topic_tools_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/topic_tools_generate_messages_py.dir/build
-.PHONY : topic_tools_generate_messages_py/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_cpp: frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-.PHONY : visualization_msgs_generate_messages_cpp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_cpp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
-.PHONY : visualization_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_lisp: frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : visualization_msgs_generate_messages_lisp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_lisp/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
-.PHONY : visualization_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_py: frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : visualization_msgs_generate_messages_py
-
-# fast build rule for target.
-visualization_msgs_generate_messages_py/fast:
-	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
-.PHONY : visualization_msgs_generate_messages_py/fast
 
 plugins/bounded_explore_layer.o: plugins/bounded_explore_layer.cpp.o
 .PHONY : plugins/bounded_explore_layer.o
@@ -1388,18 +898,11 @@ help:
 	@echo "... _run_tests_frontier_exploration_gtest_costmap_tools_tests"
 	@echo "... _run_tests_frontier_exploration_gtest_frontier_search_tests"
 	@echo "... _run_tests_frontier_exploration_gtest_geometry_tools_tests"
-	@echo "... bond_generate_messages_cpp"
-	@echo "... bond_generate_messages_lisp"
-	@echo "... bond_generate_messages_py"
 	@echo "... costmap_2d_gencfg"
 	@echo "... costmap_2d_generate_messages_cpp"
 	@echo "... costmap_2d_generate_messages_lisp"
 	@echo "... costmap_2d_generate_messages_py"
 	@echo "... costmap_tools_tests"
-	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... edit_cache"
 	@echo "... explore_client"
 	@echo "... explore_costmap"
@@ -1412,9 +915,6 @@ help:
 	@echo "... frontier_exploration_genlisp"
 	@echo "... frontier_exploration_genpy"
 	@echo "... frontier_search_tests"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_tools_tests"
 	@echo "... install"
 	@echo "... install/local"
@@ -1423,38 +923,13 @@ help:
 	@echo "... map_msgs_generate_messages_cpp"
 	@echo "... map_msgs_generate_messages_lisp"
 	@echo "... map_msgs_generate_messages_py"
-	@echo "... nav_msgs_generate_messages_cpp"
-	@echo "... nav_msgs_generate_messages_lisp"
-	@echo "... nav_msgs_generate_messages_py"
-	@echo "... nodelet_generate_messages_cpp"
-	@echo "... nodelet_generate_messages_lisp"
-	@echo "... nodelet_generate_messages_py"
-	@echo "... pcl_msgs_generate_messages_cpp"
-	@echo "... pcl_msgs_generate_messages_lisp"
-	@echo "... pcl_msgs_generate_messages_py"
-	@echo "... pcl_ros_gencfg"
 	@echo "... rebuild_cache"
 	@echo "... run_tests_frontier_exploration"
 	@echo "... run_tests_frontier_exploration_gtest"
 	@echo "... run_tests_frontier_exploration_gtest_costmap_tools_tests"
 	@echo "... run_tests_frontier_exploration_gtest_frontier_search_tests"
 	@echo "... run_tests_frontier_exploration_gtest_geometry_tools_tests"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... test"
-	@echo "... tf2_msgs_generate_messages_cpp"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... tf_generate_messages_py"
-	@echo "... topic_tools_generate_messages_cpp"
-	@echo "... topic_tools_generate_messages_lisp"
-	@echo "... topic_tools_generate_messages_py"
-	@echo "... visualization_msgs_generate_messages_cpp"
-	@echo "... visualization_msgs_generate_messages_lisp"
-	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... plugins/bounded_explore_layer.o"
 	@echo "... plugins/bounded_explore_layer.i"
 	@echo "... plugins/bounded_explore_layer.s"

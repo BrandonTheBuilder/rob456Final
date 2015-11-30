@@ -240,6 +240,9 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
 //Path to a file.
+EIGEN_INCLUDE_DIR:PATH=/usr/include/eigen3
+
+//Path to a file.
 EIGEN_INCLUDE_DIRS:PATH=/usr/include/eigen3
 
 //Path to a program.
@@ -247,6 +250,9 @@ EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 
 //Empy script
 EMPY_SCRIPT:STRING=/usr/bin/empy
+
+//Dependencies for the target
+ElevationMapping_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libpcl_ros_filters.so;general;/opt/ros/indigo/lib/libpcl_ros_io.so;general;/opt/ros/indigo/lib/libpcl_ros_tf.so;optimized;/usr/lib/libpcl_common.so;debug;/usr/lib/libpcl_common.so;optimized;/usr/lib/libpcl_kdtree.so;debug;/usr/lib/libpcl_kdtree.so;optimized;/usr/lib/libpcl_octree.so;debug;/usr/lib/libpcl_octree.so;optimized;/usr/lib/libpcl_search.so;debug;/usr/lib/libpcl_search.so;optimized;/usr/lib/libpcl_surface.so;debug;/usr/lib/libpcl_surface.so;optimized;/usr/lib/libpcl_sample_consensus.so;debug;/usr/lib/libpcl_sample_consensus.so;optimized;/usr/lib/libpcl_filters.so;debug;/usr/lib/libpcl_filters.so;optimized;/usr/lib/libpcl_features.so;debug;/usr/lib/libpcl_features.so;optimized;/usr/lib/libpcl_segmentation.so;debug;/usr/lib/libpcl_segmentation.so;optimized;/usr/lib/libpcl_io.so;debug;/usr/lib/libpcl_io.so;optimized;/usr/lib/libpcl_registration.so;debug;/usr/lib/libpcl_registration.so;optimized;/usr/lib/libpcl_keypoints.so;debug;/usr/lib/libpcl_keypoints.so;optimized;/usr/lib/libpcl_recognition.so;debug;/usr/lib/libpcl_recognition.so;optimized;/usr/lib/libpcl_visualization.so;debug;/usr/lib/libpcl_visualization.so;optimized;/usr/lib/libpcl_people.so;debug;/usr/lib/libpcl_people.so;optimized;/usr/lib/libpcl_outofcore.so;debug;/usr/lib/libpcl_outofcore.so;optimized;/usr/lib/libpcl_tracking.so;debug;/usr/lib/libpcl_tracking.so;optimized;/usr/lib/libpcl_apps.so;debug;/usr/lib/libpcl_apps.so;general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;general;/usr/lib/libOpenNI.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;general;/usr/lib/libvtkCommon.so.5.8.0;general;/usr/lib/libvtkRendering.so.5.8.0;general;/usr/lib/libvtkHybrid.so.5.8.0;general;/usr/lib/libvtkCharts.so.5.8.0;general;/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/librosbag.so;general;/opt/ros/indigo/lib/librosbag_storage.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/opt/ros/indigo/lib/libroslz4.so;general;/usr/lib/x86_64-linux-gnu/liblz4.so;general;/opt/ros/indigo/lib/libtopic_tools.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
 
 //Path to a file.
 GTEST_INCLUDE_DIR:PATH=/usr/include
@@ -277,6 +283,23 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
+
+//Path where debug 3rdpaty OpenCV dependencies are located
+OpenCV_3RDPARTY_LIB_DIR_DBG:PATH=
+
+//Path where release 3rdpaty OpenCV dependencies are located
+OpenCV_3RDPARTY_LIB_DIR_OPT:PATH=
+
+OpenCV_CONFIG_PATH:FILEPATH=/usr/share/OpenCV
+
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=/usr/share/OpenCV
+
+//Path where debug OpenCV libraries are located
+OpenCV_LIB_DIR_DBG:PATH=
+
+//Path where release OpenCV libraries are located
+OpenCV_LIB_DIR_OPT:PATH=
 
 //path to common headers
 PCL_COMMON_INCLUDE_DIR:PATH=/usr/include/pcl-1.7
@@ -335,11 +358,17 @@ catkin_DIR:PATH=/opt/ros/indigo/share/catkin/cmake
 //The directory containing a CMake configuration file for class_loader.
 class_loader_DIR:PATH=/opt/ros/indigo/share/class_loader/cmake
 
+//The directory containing a CMake configuration file for cmake_modules.
+cmake_modules_DIR:PATH=/opt/ros/indigo/share/cmake_modules/cmake
+
 //The directory containing a CMake configuration file for costmap_2d.
 costmap_2d_DIR:PATH=/opt/ros/indigo/share/costmap_2d/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/indigo/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for cv_bridge.
+cv_bridge_DIR:PATH=/opt/ros/indigo/share/cv_bridge/cmake
 
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/indigo/share/dynamic_reconfigure/cmake
@@ -405,6 +434,84 @@ gtest_force_shared_crt:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//Value Computed by CMake
+hector_costmap_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build/hector_navigation/hector_costmap
+
+//Value Computed by CMake
+hector_costmap_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/hector_navigation/hector_costmap
+
+//Value Computed by CMake
+hector_driving_aid_markers_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build/hector_navigation/hector_driving_aid_markers
+
+//Value Computed by CMake
+hector_driving_aid_markers_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/hector_navigation/hector_driving_aid_markers
+
+//Value Computed by CMake
+hector_elevation_mapping_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build/hector_navigation/hector_elevation_mapping
+
+//Value Computed by CMake
+hector_elevation_mapping_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/hector_navigation/hector_elevation_mapping
+
+//Value Computed by CMake
+hector_elevation_msgs_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build/hector_navigation/hector_elevation_msgs
+
+//The directory containing a CMake configuration file for hector_elevation_msgs.
+hector_elevation_msgs_DIR:PATH=/home/loren/Workspaces/final_catkin/devel/share/hector_elevation_msgs/cmake
+
+//Value Computed by CMake
+hector_elevation_msgs_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/hector_navigation/hector_elevation_msgs
+
+//Value Computed by CMake
+hector_elevation_visualization_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build/hector_navigation/hector_elevation_visualization
+
+//Value Computed by CMake
+hector_elevation_visualization_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/hector_navigation/hector_elevation_visualization
+
+//Dependencies for the target
+hector_exploration_base_global_planner_plugin_LIB_DEPENDS:STATIC=general;hector_exploration_planner;
+
+//Value Computed by CMake
+hector_exploration_controller_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build/hector_navigation/hector_exploration_controller
+
+//Value Computed by CMake
+hector_exploration_controller_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/hector_navigation/hector_exploration_controller
+
+//Value Computed by CMake
+hector_exploration_node_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build/hector_navigation/hector_exploration_node
+
+//Value Computed by CMake
+hector_exploration_node_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/hector_navigation/hector_exploration_node
+
+//Value Computed by CMake
+hector_exploration_planner_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build/hector_navigation/hector_exploration_planner
+
+//The directory containing a CMake configuration file for hector_exploration_planner.
+hector_exploration_planner_DIR:PATH=/home/loren/Workspaces/final_catkin/devel/share/hector_exploration_planner/cmake
+
+//Dependencies for target
+hector_exploration_planner_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+hector_exploration_planner_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/hector_navigation/hector_exploration_planner
+
+//The directory containing a CMake configuration file for hector_map_tools.
+hector_map_tools_DIR:PATH=/opt/ros/indigo/share/hector_map_tools/cmake
+
+//The directory containing a CMake configuration file for hector_nav_msgs.
+hector_nav_msgs_DIR:PATH=/opt/ros/indigo/share/hector_nav_msgs/cmake
+
+//Value Computed by CMake
+hector_path_follower_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build/hector_navigation/hector_path_follower
+
+//The directory containing a CMake configuration file for hector_path_follower.
+hector_path_follower_DIR:PATH=/home/loren/Workspaces/final_catkin/devel/share/hector_path_follower/cmake
+
+//Dependencies for target
+hector_path_follower_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+hector_path_follower_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/hector_navigation/hector_path_follower
+
 //The directory containing a CMake configuration file for laser_geometry.
 laser_geometry_DIR:PATH=/opt/ros/indigo/share/laser_geometry/cmake
 
@@ -434,6 +541,9 @@ nav_bundle_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build/nav_bundl
 
 //Value Computed by CMake
 nav_bundle_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/nav_bundle
+
+//The directory containing a CMake configuration file for nav_core.
+nav_core_DIR:PATH=/opt/ros/indigo/share/nav_core/cmake
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/indigo/share/nav_msgs/cmake
@@ -672,7 +782,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=7
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=16
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -713,10 +823,16 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: EIGEN_INCLUDE_DIR
+EIGEN_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//Details about finding Eigen
+FIND_PACKAGE_MESSAGE_DETAILS_Eigen:INTERNAL=[/usr/include/eigen3][v()]
 //Details about finding PCL
 FIND_PACKAGE_MESSAGE_DETAILS_PCL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/libpcl_common.so;debug;/usr/lib/libpcl_common.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libpthread.so][/usr/include/pcl-1.7;/usr/include/eigen3;/usr/include][v()]
 //Details about finding PCL_COMMON
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_COMMON:INTERNAL=[/usr/lib/libpcl_common.so][/usr/include/pcl-1.7][v()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.26()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.6()]
 //Details about finding Threads
@@ -738,6 +854,16 @@ GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCV_3RDPARTY_LIB_DIR_DBG
+OpenCV_3RDPARTY_LIB_DIR_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCV_3RDPARTY_LIB_DIR_OPT
+OpenCV_3RDPARTY_LIB_DIR_OPT-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCV_CONFIG_PATH
+OpenCV_CONFIG_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCV_LIB_DIR_DBG
+OpenCV_LIB_DIR_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCV_LIB_DIR_OPT
+OpenCV_LIB_DIR_OPT-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PCL_COMMON_LIBRARY
 PCL_COMMON_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PCL_COMMON_LIBRARY_DEBUG

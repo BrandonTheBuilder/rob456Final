@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "hector_driving_aid_markers")
+set(hector_driving_aid_markers_MAINTAINER "Stefan Kohlbrecher <kohlbrecher@sim.tu-darmstadt.de>")
+set(hector_driving_aid_markers_DEPRECATED "")
+set(hector_driving_aid_markers_VERSION "0.0.0")
+set(hector_driving_aid_markers_BUILD_DEPENDS "roscpp" "visualization_msgs")
+set(hector_driving_aid_markers_RUN_DEPENDS "roscpp" "visualization_msgs")
+set(hector_driving_aid_markers_BUILDTOOL_DEPENDS "catkin")
