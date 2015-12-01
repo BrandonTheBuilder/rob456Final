@@ -460,7 +460,7 @@ ExplorationPlannerConfig::GroupDescription<ExplorationPlannerConfig::DEFAULT, Ex
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.explore_close_to_path = 1;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.explore_close_to_path = 1;
+      __default__.explore_close_to_path = 0;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(ExplorationPlannerConfig::AbstractParamDescriptionConstPtr(new ExplorationPlannerConfig::ParamDescription<bool>("explore_close_to_path", "bool", 0, "explore_close_to_path", "", &ExplorationPlannerConfig::explore_close_to_path)));
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -550,7 +550,7 @@ ExplorationPlannerConfig::GroupDescription<ExplorationPlannerConfig::DEFAULT, Ex
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.close_to_path_target_distance = 10.0;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.close_to_path_target_distance = 1.2;
+      __default__.close_to_path_target_distance = 5.0;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(ExplorationPlannerConfig::AbstractParamDescriptionConstPtr(new ExplorationPlannerConfig::ParamDescription<double>("close_to_path_target_distance", "double", 0, "close to path exploration target distance", "", &ExplorationPlannerConfig::close_to_path_target_distance)));
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"

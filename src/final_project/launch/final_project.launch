@@ -2,7 +2,7 @@
     <!-- Set all nodes to use sim time -->
     <param name="use_sim_time" value="true" />
     <!-- Launch World -->
-    <node pkg="stage_ros" type="stageros" name="simulator" args="$(find lab3)/worlds/manyDotsNoisyOdom.world">
+    <node pkg="stage_ros" type="stageros" name="simulator" args="$(find final_project)/testWorlds/mazeWorld.world">
     </node>
     <!-- Include nav_bundle launch file -->
     <include file="$(find nav_bundle)/launch/nav_bundle.launch"/>

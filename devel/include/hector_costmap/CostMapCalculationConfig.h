@@ -444,7 +444,7 @@ CostMapCalculationConfig::GroupDescription<CostMapCalculationConfig::DEFAULT, Co
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.allow_kinect_to_clear_occupied_cells = 1;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.allow_kinect_to_clear_occupied_cells = 1;
+      __default__.allow_kinect_to_clear_occupied_cells = 0;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(CostMapCalculationConfig::AbstractParamDescriptionConstPtr(new CostMapCalculationConfig::ParamDescription<bool>("allow_kinect_to_clear_occupied_cells", "bool", 0, "Allow kinect to clear occupied cells", "", &CostMapCalculationConfig::allow_kinect_to_clear_occupied_cells)));
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -454,7 +454,7 @@ CostMapCalculationConfig::GroupDescription<CostMapCalculationConfig::DEFAULT, Co
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.allow_elevation_map_to_clear_occupied_cells = 1;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.allow_elevation_map_to_clear_occupied_cells = 1;
+      __default__.allow_elevation_map_to_clear_occupied_cells = 0;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(CostMapCalculationConfig::AbstractParamDescriptionConstPtr(new CostMapCalculationConfig::ParamDescription<bool>("allow_elevation_map_to_clear_occupied_cells", "bool", 0, "Allows elevation map to clear occupied cells", "", &CostMapCalculationConfig::allow_elevation_map_to_clear_occupied_cells)));
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"

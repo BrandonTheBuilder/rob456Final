@@ -9,12 +9,21 @@ from tf.transformations import euler_from_quaternion
 from hector_nav_msgs.srv._GetRobotTrajectory import GetRobotTrajectory
 from move_base_msgs.msg import MoveBaseActionResult
 from nav_msgs.msg import Odometry
+from sensor_msgs.msg import LaserScan
 
 # The velocity command message
 from geometry_msgs.msg import Twist
 from actionlib_msgs.msg import GoalStatusArray
 from actionlib_msgs.msg import GoalID
-NAV_TIMEOUT = 100
+from geometry_msgs.msg import PoseStamped
+import math
+NAV_TIMEOUT = 30
+OBSTACLE_RANGE = 2
+ANGLE_LIMIT = 0.5
+ESCAPE_SPEED = 1
+ESCAPE_DISTANCE = 5
+TURN_SPEED = 1
+PATH_INDEX = 5 #Take every PATH_INDEX item from the path list
 
 
 class FrontierToNav:
@@ -24,44 +33,94 @@ class FrontierToNav:
     # Keep track of waypoints that cause the robot to get stuck.
     self.failedPath = []
     self.cancel = rospy.Publisher('/move_base/cancel', GoalID, queue_size=1).publish
-    self.publishWaypoint = rospy.Publisher('/base_link_goal', Twist, queue_size=1).publish
+    self.publishLocalWaypoint = rospy.Publisher('/base_link_goal', Twist, queue_size=1).publish
+    self.publishGlobalWaypoint = rospy.Publisher('/move_base_simple/goal', PoseStamped, queue_size=10).publish
+    self.publishVelocity = rospy.Publisher('cmd_vel',Twist, queue_size=5).publish
     # self.subscribeToMoveBase = rospy.Subscriber('/move_base/status' , 
     #                                               GoalStatusArray, 
     #                                               self.callback)
     self._getPath = rospy.ServiceProxy('get_exploration_path', GetRobotTrajectory)
+    startOdom = rospy.wait_for_message("/odom", Odometry)
+    self.start = startOdom.pose
+    self.status = 0
     self.run()
 
 
-  
-  def publishGoal(self):
-    rospy.loginfo('[frontier_to_nav] Publishing Goal')
-    self.currentGoal = self.path.pop()
-    self.publishWaypoint(self.currentGoal)
+  def run(self):
+    self.getPath()
+    self.publishGoal()
+    while True:
+      try:
+        status = rospy.wait_for_message("/move_base/result", MoveBaseActionResult, timeout=NAV_TIMEOUT)
+        if status.status.status == 3:
+          self.status = 0
+          self.actionablePath.append(self.currentGoal)
+          if len(self.path) > 0:
+            self.publishGoal()
+          else:
+            rospy.loginfo('[frontier_to_nav] Path is empty')
+            self.getPath()
+            self.publishGoal()
+        elif status.status.status == 4:
+          rospy.loginfo('[frontier_to_nav] Move Base returned status 4 no path found.')
+          self.failedPath.append(self.currentGoal)
+          self.somethingsWrong()
+        elif status.status.status == 2:
+          rospy.loginfo('[frontier_to_nav] Move Base interupted by new goal.')
+        else:
+          rospy.loginfo('Move Base returned status {}, {}'.format(status.status.status
+                                                                  ,status.status.text))
+          self.failedPath.append(self.currentGoal)
+          self.somethingsWrong()
+      except:
+        rospy.loginfo('[frontier_to_nav] MoveBaseActionResult timed out')
+        self.failedPath.append(self.currentGoal)
+        self.somethingsWrong()
 
 
   def getPath(self):
     request = GetRobotTrajectory._request_class()
-    path = self._getPath(request)
-    self.path = self._pathToWaypoints(path.trajectory.poses)
+    response = self._getPath(request)
+    path = response.trajectory.poses
+    self.path = path[0::PATH_INDEX]
+    self.path.append(path[len(path)-1]) 
     self.path.reverse()
 
 
-  def _pathToWaypoints(self, poses):
-    path = []
-    for goal in poses:
-      waypoint = Twist()
-      pose = goal.pose
-      p = pose.position
-      waypoint.linear.x = p.x
-      waypoint.linear.y = p.y
-      waypoint.linear.z = p.z
-      o = pose.orientation
-      (waypoint.angular.x, waypoint.angular.y, waypoint.angular.z)  = euler_from_quaternion([o.x, o.y, o.z, o.w])
-      if waypoint not in self.failedPath:
-        path.append(waypoint)
-    return path
+  def publishGoal(self):
+    if len(self.path)>0:
+      rospy.loginfo('[frontier_to_nav] Publishing Goal')
+      self.currentGoal = self.path.pop()
+      self.publishGlobalWaypoint(self.currentGoal)
+      rospy.loginfo('[frontier_to_nav] Setting Goal: %s', self.currentGoal)
+      # del self.path[:]
+    else:
+      rospy.logwarn('[frontier_to_nav] There is no path to follow')
+
+
+  def somethingsWrong(self):
+    if self.status == 0:
+      rospy.logwarn('[frontier_to_nav] Trying a reset')
+      self.status = 1
+      self.reset()
+
+    elif self.status == 1:
+      rospy.logwarn('[frontier_to_nav] Reset failed, attempting to retreat')
+      self.status = 2
+      self.retreat()
+
+    elif self.status == 2:
+      rospy.logwarn('[frontier_to_nav] Retreat failed, attempting emergency escape')
+      self.status = 3
+      self.helpImStuck()
+
+    elif self.status == 3:
+      rospy.logerr('[frontier_to_nav] All contingency plans failed, manual intervention'
+                    ' may be required')
+
 
   def reset(self):
+    rospy.loginfo('[frontier_to_nav] Reseting path')
     self.cancel()
     self.getPath()
     self.publishGoal()
@@ -70,67 +129,49 @@ class FrontierToNav:
   def retreat(self):
     self.cancel()
     if len(self.actionablePath)>0:
-      self.publishWaypoint(self.actionablePath.pop())
+      rospy.loginfo('[frontier_to_nav] Retreating to last waypoint')
+      self.publishGlobalWaypoint(self.actionablePath.pop())
     else:
-      self.publishWaypoint(self.start)
+      rospy.loginfo('[frontier_to_nav] Nowhere to run')
+      # self.publishGlobalWaypoint(self.start)
 
 
-  def run(self):
+  def helpImStuck(self):
+    self.cancel()
+    rospy.logwarn('[frontier_to_nav] Trying to unstick robot')
+    scan = rospy.wait_for_message("/base_scan", LaserScan)
+    maxAngle = scan.angle_max
+    minAngle = scan.angle_min
+    distanceArray = scan.ranges
+    numScans = len(distanceArray)
+    angleIncrement = scan.angle_increment
     
-    startOdom = rospy.wait_for_message("/odom", Odometry)
-    self.start = startOdom.twist.twist
-    self.getPath()
-    self.publishGoal()
-    while True:
-      try:
-        status = rospy.wait_for_message("/move_base/result", MoveBaseActionResult, timeout=100)
-        if status.status.status == 3:
-          self.actionablePath.append(self.currentGoal)
-          if len(self.path) > 0:
-            self.publishGoal()
-          else:
-            rospy.loginfo('Path is empty, reseting...')
-            self.reset()
-        elif status.status.status == 4:
-          rospy.loginfo('Cannot reach goal, robot is retreating')
-          self.failedPath.append(self.currentGoal)
-          self.retreat()
-        else:
-          rospy.loginfo('Move Base returned status {}, {}'.format(status.status.status
-                                                                  ,status.status.text))
-          self.failedPath.append(self.currentGoal)
-          self.reset()
-      except:
-        rospy.loginfo('Reseting frontier_to_nav MoveBaseActionResult timed out')
-        self.failedPath.append(self.currentGoal)
-        self.reset()
-      
+    while min(distanceArray) < OBSTACLE_RANGE:
+      escVel = Twist()
+      mindex = distanceArray.index(min(distanceArray))
+      minAngle = mindex*angleIncrement + minAngle
+      while abs((abs(self.getYaw() - minAngle)-math.pi)) > ANGLE_LIMIT:
+        escVel.angular.z = TURN_SPEED;
+        rospy.loginfo('[frontier_to_nav] Turning to run!')
+        self.publishVelocity(escVel)
+      escVel.linear.x = ESCAPE_SPEED
+      rospy.loginfo('[frontier_to_nav] Running Away!')
+      self.publishVelocity(escVel)
+      scan = rospy.wait_for_message("/base_scan", LaserScan)
+      distanceArray = scan.ranges
+    stop = Twist()
+    self.publishVelocity(stop)
+    forward = Twist()
+    forward.linear.x += ESCAPE_DISTANCE
+    self.publishLocalWaypoint(forward)
 
-  def callback(self, status):
-    if hasattr(self, 'path'):
-      if len(status.status_list) > 0:
-        stat = status.status_list.pop()
-        time = status.header.stamp.secs - stat.goal_id.stamp.secs
-        if stat.status == 3:
-          rospy.loginfo('Goal Reached')
-          if len(self.path) > 0:
-            self.publishGoal()
-          else:
-            self.waiting = True
-            self.getPath()
-            self.publishGoal()
-            self.waiting = False
-     
-        elif stat.status == 1:
-          rospy.loginfo('moving')
-          
-        else:
-          rospy.loginfo('Reseting nav goals')
-          self.getPath()
-          self.publishGoal()
 
-      else:
-        pass
+  def getYaw(self):
+    odom = rospy.wait_for_message("/odom", Odometry)
+    pose = odom.pose.pose
+    o = pose.orientation
+    (roll, pitch, yaw) = euler_from_quaternion([o.x, o.y, o.z, o.w])
+    return yaw
     
 
 if __name__ == "__main__":
@@ -139,3 +180,4 @@ if __name__ == "__main__":
   rospy.wait_for_service('get_exploration_path')
   ftv = FrontierToNav()
   rospy.spin()
+  

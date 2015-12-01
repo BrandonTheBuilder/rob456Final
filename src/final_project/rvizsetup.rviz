@@ -149,21 +149,6 @@ Visualization Manager:
       Name: Map
       Topic: /move_base/global_costmap/costmap
       Value: true
-    - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /exploration_polygon_marker
-      Name: Marker
-      Namespaces:
-        {}
-      Queue Size: 100
-      Value: true
-    - Alpha: 1
-      Class: rviz/Polygon
-      Color: 25; 255; 0
-      Enabled: true
-      Name: Polygon
-      Topic: /hector_exploration_node/global_costmap/footprint
-      Value: true
     - Alpha: 1
       Axes Length: 1
       Axes Radius: 0.1
@@ -176,7 +161,14 @@ Visualization Manager:
       Shaft Length: 1
       Shaft Radius: 0.05
       Shape: Arrow
-      Topic: /hector_exploration_node/hector_exploration_planner/goal_pose
+      Topic: /move_base/current_goal
+      Value: true
+    - Alpha: 1
+      Class: rviz/Polygon
+      Color: 25; 255; 0
+      Enabled: true
+      Name: Polygon
+      Topic: /hector_exploration_node/global_costmap/footprint
       Value: true
   Enabled: true
   Global Options:
@@ -202,16 +194,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 12.9145
+      Distance: 35.2019
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -9.99085
-        Y: 10.0429
-        Z: 0.849352
+        X: 13.8176
+        Y: -1.68224
+        Z: 0.837603
       Name: Current View
       Near Clip Distance: 0.01
       Pitch: 1.5698
@@ -235,5 +227,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1276
-  X: 52
+  X: 34
   Y: -8

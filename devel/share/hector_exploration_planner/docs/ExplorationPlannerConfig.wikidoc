@@ -16,7 +16,7 @@ desc=See the [[dynamic_reconfigure]] package for details on dynamically reconfig
 2.type= bool
 2.desc=plan_in_unknown 
 3.name= ~explore_close_to_path
-3.default= True
+3.default= False
 3.type= bool
 3.desc=explore_close_to_path 
 4.name= ~use_inflated_obstacles
@@ -52,7 +52,7 @@ desc=See the [[dynamic_reconfigure]] package for details on dynamically reconfig
 11.type= double
 11.desc=allowed angle for observation pose adjustment [deg] Range: 0.0 to 360.0
 12.name= ~close_to_path_target_distance
-12.default= 1.2
+12.default= 5.0
 12.type= double
 12.desc=close to path exploration target distance Range: 0.0 to 10.0
 }

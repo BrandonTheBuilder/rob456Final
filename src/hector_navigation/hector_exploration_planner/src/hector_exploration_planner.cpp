@@ -779,7 +779,7 @@ void HectorExplorationPlanner::setupMapData()
 
   //Below code can be used to guarantee start pose is cleared. Somewhat risky.
   //@TODO: Make available through dynamic reconfigure
-  /*
+  
   std::vector<geometry_msgs::Point> points;
   costmap_ros_->getOrientedFootprint(points);
 
@@ -792,7 +792,7 @@ void HectorExplorationPlanner::setupMapData()
     ROS_INFO("Set costmap to free");
   else
     ROS_INFO("Failed to set costmap free");
-  */
+  
 
   if ((this->map_width_ != costmap_->getSizeInCellsX()) || (this->map_height_ != costmap_->getSizeInCellsY())){
     map_width_ = costmap_->getSizeInCellsX();
@@ -822,7 +822,7 @@ void HectorExplorationPlanner::deleteMapData()
 
 bool HectorExplorationPlanner::buildexploration_trans_array_(const geometry_msgs::PoseStamped &start, std::vector<geometry_msgs::PoseStamped> goals, bool useAnglePenalty, bool use_cell_danger){
 
-  ROS_DEBUG("[hector_exploration_planner] buildexploration_trans_array_");
+  ROS_INFO("[hector_exploration_planner] buildexploration_trans_array_");
 
   // reset exploration transform
   std::fill_n(exploration_trans_array_.get(), num_map_cells_, UINT_MAX);
@@ -945,7 +945,7 @@ bool HectorExplorationPlanner::buildexploration_trans_array_(const geometry_msgs
     }
   }
 
-  ROS_DEBUG("[hector_exploration_planner] END: buildexploration_trans_array_");
+  ROS_INFO("[hector_exploration_planner] END: buildexploration_trans_array_");
 
   vis_->publishVisOnDemand(*costmap_, exploration_trans_array_.get());
   return true;
@@ -1004,7 +1004,7 @@ bool HectorExplorationPlanner::buildobstacle_trans_array_(bool use_inflated_obst
 
 bool HectorExplorationPlanner::getTrajectory(const geometry_msgs::PoseStamped &start, std::vector<geometry_msgs::PoseStamped> goals, std::vector<geometry_msgs::PoseStamped> &plan){
 
-  ROS_DEBUG("[hector_exploration_planner] getTrajectory");
+  ROS_INFO("[hector_exploration_planner] getTrajectory");
 
   // setup start positions
   unsigned int mx,my;
@@ -1078,7 +1078,7 @@ bool HectorExplorationPlanner::getTrajectory(const geometry_msgs::PoseStamped &s
     maxDelta = 0;
   }
 
-  ROS_DEBUG("[hector_exploration_planner] END: getTrajectory. Plansize %u", (unsigned int)plan.size());
+  ROS_INFO("[hector_exploration_planner] END: getTrajectory. Plansize %u", (unsigned int)plan.size());
   return !plan.empty();
 }
 
