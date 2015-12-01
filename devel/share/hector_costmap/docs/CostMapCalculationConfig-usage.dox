@@ -3,7 +3,7 @@
 <node name="hector_costmap" pkg="hector_costmap" type="hector_costmap">
   <param name="max_delta_elevation" type="double" value="0.1" />
   <param name="use_grid_map" type="bool" value="True" />
-  <param name="use_elevation_map" type="bool" value="True" />
+  <param name="use_elevation_map" type="bool" value="False" />
   <param name="allow_kinect_to_clear_occupied_cells" type="bool" value="True" />
   <param name="allow_elevation_map_to_clear_occupied_cells" type="bool" value="True" />
   <param name="max_clear_size" type="int" value="1" />

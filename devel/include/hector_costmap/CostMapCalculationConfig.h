@@ -434,7 +434,7 @@ CostMapCalculationConfig::GroupDescription<CostMapCalculationConfig::DEFAULT, Co
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.use_elevation_map = 1;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.use_elevation_map = 1;
+      __default__.use_elevation_map = 0;
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(CostMapCalculationConfig::AbstractParamDescriptionConstPtr(new CostMapCalculationConfig::ParamDescription<bool>("use_elevation_map", "bool", 0, "Use elevation map", "", &CostMapCalculationConfig::use_elevation_map)));
 //#line 262 "/opt/ros/indigo/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"

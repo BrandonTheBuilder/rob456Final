@@ -150,6 +150,62 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_gencfg.dir/rule:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_gencfg.dir/rule
+.PHONY : hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_gencfg.dir/rule
+
+# Convenience name for target.
+costmap_2d_gencfg: hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_gencfg.dir/rule
+.PHONY : costmap_2d_gencfg
+
+# fast build rule for target.
+costmap_2d_gencfg/fast:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_gencfg.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_gencfg.dir/build
+.PHONY : costmap_2d_gencfg/fast
+
+# Convenience name for target.
+hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+.PHONY : hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_cpp: hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+.PHONY : costmap_2d_generate_messages_cpp
+
+# fast build rule for target.
+costmap_2d_generate_messages_cpp/fast:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
+.PHONY : costmap_2d_generate_messages_cpp/fast
+
+# Convenience name for target.
+hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+.PHONY : hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_lisp: hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+.PHONY : costmap_2d_generate_messages_lisp
+
+# fast build rule for target.
+costmap_2d_generate_messages_lisp/fast:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
+.PHONY : costmap_2d_generate_messages_lisp/fast
+
+# Convenience name for target.
+hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+.PHONY : hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_py: hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+.PHONY : costmap_2d_generate_messages_py
+
+# fast build rule for target.
+costmap_2d_generate_messages_py/fast:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_py.dir/build
+.PHONY : costmap_2d_generate_messages_py/fast
+
+# Convenience name for target.
 hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_base_global_planner_plugin.dir/rule:
 	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_base_global_planner_plugin.dir/rule
 .PHONY : hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_base_global_planner_plugin.dir/rule
@@ -190,6 +246,48 @@ hector_exploration_planner_gencfg: hector_navigation/hector_exploration_planner/
 hector_exploration_planner_gencfg/fast:
 	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_planner_gencfg.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_planner_gencfg.dir/build
 .PHONY : hector_exploration_planner_gencfg/fast
+
+# Convenience name for target.
+hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+.PHONY : hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_cpp: hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+.PHONY : map_msgs_generate_messages_cpp
+
+# fast build rule for target.
+map_msgs_generate_messages_cpp/fast:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
+.PHONY : map_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+.PHONY : hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_lisp: hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+.PHONY : map_msgs_generate_messages_lisp
+
+# fast build rule for target.
+map_msgs_generate_messages_lisp/fast:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
+.PHONY : map_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+.PHONY : hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_py: hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+.PHONY : map_msgs_generate_messages_py
+
+# fast build rule for target.
+map_msgs_generate_messages_py/fast:
+	cd /home/loren/Workspaces/final_catkin/build && $(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_py.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_py.dir/build
+.PHONY : map_msgs_generate_messages_py/fast
 
 src/hector_exploration_base_global_planner_plugin.o: src/hector_exploration_base_global_planner_plugin.cpp.o
 .PHONY : src/hector_exploration_base_global_planner_plugin.o
@@ -245,6 +343,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... costmap_2d_gencfg"
+	@echo "... costmap_2d_generate_messages_cpp"
+	@echo "... costmap_2d_generate_messages_lisp"
+	@echo "... costmap_2d_generate_messages_py"
 	@echo "... edit_cache"
 	@echo "... hector_exploration_base_global_planner_plugin"
 	@echo "... hector_exploration_planner"
@@ -253,6 +355,9 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... map_msgs_generate_messages_cpp"
+	@echo "... map_msgs_generate_messages_lisp"
+	@echo "... map_msgs_generate_messages_py"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... src/hector_exploration_base_global_planner_plugin.o"

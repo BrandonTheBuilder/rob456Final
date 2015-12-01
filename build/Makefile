@@ -1255,201 +1255,6 @@ ElevationMappingNode/fast:
 .PHONY : ElevationMappingNode/fast
 
 #=============================================================================
-# Target rules for targets named _frontier_exploration_generate_messages_check_deps_ExploreTaskAction
-
-# Build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskAction: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _frontier_exploration_generate_messages_check_deps_ExploreTaskAction
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskAction
-
-# fast build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskAction/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskAction.dir/build.make frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskAction.dir/build
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskAction/fast
-
-#=============================================================================
-# Target rules for targets named _frontier_exploration_generate_messages_check_deps_ExploreTaskActionFeedback
-
-# Build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskActionFeedback: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _frontier_exploration_generate_messages_check_deps_ExploreTaskActionFeedback
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskActionFeedback
-
-# fast build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskActionFeedback/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskActionFeedback.dir/build.make frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskActionFeedback.dir/build
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskActionFeedback/fast
-
-#=============================================================================
-# Target rules for targets named _frontier_exploration_generate_messages_check_deps_ExploreTaskActionGoal
-
-# Build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskActionGoal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _frontier_exploration_generate_messages_check_deps_ExploreTaskActionGoal
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskActionGoal
-
-# fast build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskActionGoal/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskActionGoal.dir/build.make frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskActionGoal.dir/build
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskActionGoal/fast
-
-#=============================================================================
-# Target rules for targets named _frontier_exploration_generate_messages_check_deps_ExploreTaskActionResult
-
-# Build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskActionResult: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _frontier_exploration_generate_messages_check_deps_ExploreTaskActionResult
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskActionResult
-
-# fast build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskActionResult/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskActionResult.dir/build.make frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskActionResult.dir/build
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskActionResult/fast
-
-#=============================================================================
-# Target rules for targets named _frontier_exploration_generate_messages_check_deps_ExploreTaskFeedback
-
-# Build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskFeedback: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _frontier_exploration_generate_messages_check_deps_ExploreTaskFeedback
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskFeedback
-
-# fast build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskFeedback/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskFeedback.dir/build.make frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskFeedback.dir/build
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskFeedback/fast
-
-#=============================================================================
-# Target rules for targets named _frontier_exploration_generate_messages_check_deps_ExploreTaskGoal
-
-# Build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskGoal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _frontier_exploration_generate_messages_check_deps_ExploreTaskGoal
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskGoal
-
-# fast build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskGoal/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskGoal.dir/build.make frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskGoal.dir/build
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskGoal/fast
-
-#=============================================================================
-# Target rules for targets named _frontier_exploration_generate_messages_check_deps_ExploreTaskResult
-
-# Build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskResult: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _frontier_exploration_generate_messages_check_deps_ExploreTaskResult
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskResult
-
-# fast build rule for target.
-_frontier_exploration_generate_messages_check_deps_ExploreTaskResult/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskResult.dir/build.make frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_ExploreTaskResult.dir/build
-.PHONY : _frontier_exploration_generate_messages_check_deps_ExploreTaskResult/fast
-
-#=============================================================================
-# Target rules for targets named _frontier_exploration_generate_messages_check_deps_Frontier
-
-# Build rule for target.
-_frontier_exploration_generate_messages_check_deps_Frontier: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _frontier_exploration_generate_messages_check_deps_Frontier
-.PHONY : _frontier_exploration_generate_messages_check_deps_Frontier
-
-# fast build rule for target.
-_frontier_exploration_generate_messages_check_deps_Frontier/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_Frontier.dir/build.make frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_Frontier.dir/build
-.PHONY : _frontier_exploration_generate_messages_check_deps_Frontier/fast
-
-#=============================================================================
-# Target rules for targets named _frontier_exploration_generate_messages_check_deps_GetNextFrontier
-
-# Build rule for target.
-_frontier_exploration_generate_messages_check_deps_GetNextFrontier: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _frontier_exploration_generate_messages_check_deps_GetNextFrontier
-.PHONY : _frontier_exploration_generate_messages_check_deps_GetNextFrontier
-
-# fast build rule for target.
-_frontier_exploration_generate_messages_check_deps_GetNextFrontier/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_GetNextFrontier.dir/build.make frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_GetNextFrontier.dir/build
-.PHONY : _frontier_exploration_generate_messages_check_deps_GetNextFrontier/fast
-
-#=============================================================================
-# Target rules for targets named _frontier_exploration_generate_messages_check_deps_UpdateBoundaryPolygon
-
-# Build rule for target.
-_frontier_exploration_generate_messages_check_deps_UpdateBoundaryPolygon: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _frontier_exploration_generate_messages_check_deps_UpdateBoundaryPolygon
-.PHONY : _frontier_exploration_generate_messages_check_deps_UpdateBoundaryPolygon
-
-# fast build rule for target.
-_frontier_exploration_generate_messages_check_deps_UpdateBoundaryPolygon/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_UpdateBoundaryPolygon.dir/build.make frontier_exploration/CMakeFiles/_frontier_exploration_generate_messages_check_deps_UpdateBoundaryPolygon.dir/build
-.PHONY : _frontier_exploration_generate_messages_check_deps_UpdateBoundaryPolygon/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_frontier_exploration
-
-# Build rule for target.
-_run_tests_frontier_exploration: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_frontier_exploration
-.PHONY : _run_tests_frontier_exploration
-
-# fast build rule for target.
-_run_tests_frontier_exploration/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_run_tests_frontier_exploration.dir/build.make frontier_exploration/CMakeFiles/_run_tests_frontier_exploration.dir/build
-.PHONY : _run_tests_frontier_exploration/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_frontier_exploration_gtest
-
-# Build rule for target.
-_run_tests_frontier_exploration_gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_frontier_exploration_gtest
-.PHONY : _run_tests_frontier_exploration_gtest
-
-# fast build rule for target.
-_run_tests_frontier_exploration_gtest/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_run_tests_frontier_exploration_gtest.dir/build.make frontier_exploration/CMakeFiles/_run_tests_frontier_exploration_gtest.dir/build
-.PHONY : _run_tests_frontier_exploration_gtest/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_frontier_exploration_gtest_costmap_tools_tests
-
-# Build rule for target.
-_run_tests_frontier_exploration_gtest_costmap_tools_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_frontier_exploration_gtest_costmap_tools_tests
-.PHONY : _run_tests_frontier_exploration_gtest_costmap_tools_tests
-
-# fast build rule for target.
-_run_tests_frontier_exploration_gtest_costmap_tools_tests/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_run_tests_frontier_exploration_gtest_costmap_tools_tests.dir/build.make frontier_exploration/CMakeFiles/_run_tests_frontier_exploration_gtest_costmap_tools_tests.dir/build
-.PHONY : _run_tests_frontier_exploration_gtest_costmap_tools_tests/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_frontier_exploration_gtest_frontier_search_tests
-
-# Build rule for target.
-_run_tests_frontier_exploration_gtest_frontier_search_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_frontier_exploration_gtest_frontier_search_tests
-.PHONY : _run_tests_frontier_exploration_gtest_frontier_search_tests
-
-# fast build rule for target.
-_run_tests_frontier_exploration_gtest_frontier_search_tests/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_run_tests_frontier_exploration_gtest_frontier_search_tests.dir/build.make frontier_exploration/CMakeFiles/_run_tests_frontier_exploration_gtest_frontier_search_tests.dir/build
-.PHONY : _run_tests_frontier_exploration_gtest_frontier_search_tests/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_frontier_exploration_gtest_geometry_tools_tests
-
-# Build rule for target.
-_run_tests_frontier_exploration_gtest_geometry_tools_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_frontier_exploration_gtest_geometry_tools_tests
-.PHONY : _run_tests_frontier_exploration_gtest_geometry_tools_tests
-
-# fast build rule for target.
-_run_tests_frontier_exploration_gtest_geometry_tools_tests/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/_run_tests_frontier_exploration_gtest_geometry_tools_tests.dir/build.make frontier_exploration/CMakeFiles/_run_tests_frontier_exploration_gtest_geometry_tools_tests.dir/build
-.PHONY : _run_tests_frontier_exploration_gtest_geometry_tools_tests/fast
-
-#=============================================================================
 # Target rules for targets named costmap_2d_gencfg
 
 # Build rule for target.
@@ -1459,7 +1264,7 @@ costmap_2d_gencfg: cmake_check_build_system
 
 # fast build rule for target.
 costmap_2d_gencfg/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/costmap_2d_gencfg.dir/build.make frontier_exploration/CMakeFiles/costmap_2d_gencfg.dir/build
+	$(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_gencfg.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_gencfg.dir/build
 .PHONY : costmap_2d_gencfg/fast
 
 #=============================================================================
@@ -1472,7 +1277,7 @@ costmap_2d_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 costmap_2d_generate_messages_cpp/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
+	$(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
 .PHONY : costmap_2d_generate_messages_cpp/fast
 
 #=============================================================================
@@ -1485,7 +1290,7 @@ costmap_2d_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 costmap_2d_generate_messages_lisp/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
+	$(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
 .PHONY : costmap_2d_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1498,281 +1303,8 @@ costmap_2d_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 costmap_2d_generate_messages_py/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/costmap_2d_generate_messages_py.dir/build
+	$(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_generate_messages_py.dir/build
 .PHONY : costmap_2d_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named costmap_tools_tests
-
-# Build rule for target.
-costmap_tools_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 costmap_tools_tests
-.PHONY : costmap_tools_tests
-
-# fast build rule for target.
-costmap_tools_tests/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/costmap_tools_tests.dir/build.make frontier_exploration/CMakeFiles/costmap_tools_tests.dir/build
-.PHONY : costmap_tools_tests/fast
-
-#=============================================================================
-# Target rules for targets named explore_client
-
-# Build rule for target.
-explore_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 explore_client
-.PHONY : explore_client
-
-# fast build rule for target.
-explore_client/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/explore_client.dir/build.make frontier_exploration/CMakeFiles/explore_client.dir/build
-.PHONY : explore_client/fast
-
-#=============================================================================
-# Target rules for targets named explore_costmap
-
-# Build rule for target.
-explore_costmap: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 explore_costmap
-.PHONY : explore_costmap
-
-# fast build rule for target.
-explore_costmap/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/explore_costmap.dir/build.make frontier_exploration/CMakeFiles/explore_costmap.dir/build
-.PHONY : explore_costmap/fast
-
-#=============================================================================
-# Target rules for targets named explore_server
-
-# Build rule for target.
-explore_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 explore_server
-.PHONY : explore_server
-
-# fast build rule for target.
-explore_server/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/explore_server.dir/build.make frontier_exploration/CMakeFiles/explore_server.dir/build
-.PHONY : explore_server/fast
-
-#=============================================================================
-# Target rules for targets named frontier_exploration_gencpp
-
-# Build rule for target.
-frontier_exploration_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 frontier_exploration_gencpp
-.PHONY : frontier_exploration_gencpp
-
-# fast build rule for target.
-frontier_exploration_gencpp/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/frontier_exploration_gencpp.dir/build.make frontier_exploration/CMakeFiles/frontier_exploration_gencpp.dir/build
-.PHONY : frontier_exploration_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named frontier_exploration_generate_messages
-
-# Build rule for target.
-frontier_exploration_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 frontier_exploration_generate_messages
-.PHONY : frontier_exploration_generate_messages
-
-# fast build rule for target.
-frontier_exploration_generate_messages/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/frontier_exploration_generate_messages.dir/build.make frontier_exploration/CMakeFiles/frontier_exploration_generate_messages.dir/build
-.PHONY : frontier_exploration_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named frontier_exploration_generate_messages_cpp
-
-# Build rule for target.
-frontier_exploration_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 frontier_exploration_generate_messages_cpp
-.PHONY : frontier_exploration_generate_messages_cpp
-
-# fast build rule for target.
-frontier_exploration_generate_messages_cpp/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/frontier_exploration_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/frontier_exploration_generate_messages_cpp.dir/build
-.PHONY : frontier_exploration_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named frontier_exploration_generate_messages_lisp
-
-# Build rule for target.
-frontier_exploration_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 frontier_exploration_generate_messages_lisp
-.PHONY : frontier_exploration_generate_messages_lisp
-
-# fast build rule for target.
-frontier_exploration_generate_messages_lisp/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/frontier_exploration_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/frontier_exploration_generate_messages_lisp.dir/build
-.PHONY : frontier_exploration_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named frontier_exploration_generate_messages_py
-
-# Build rule for target.
-frontier_exploration_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 frontier_exploration_generate_messages_py
-.PHONY : frontier_exploration_generate_messages_py
-
-# fast build rule for target.
-frontier_exploration_generate_messages_py/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/frontier_exploration_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/frontier_exploration_generate_messages_py.dir/build
-.PHONY : frontier_exploration_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named frontier_exploration_genlisp
-
-# Build rule for target.
-frontier_exploration_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 frontier_exploration_genlisp
-.PHONY : frontier_exploration_genlisp
-
-# fast build rule for target.
-frontier_exploration_genlisp/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/frontier_exploration_genlisp.dir/build.make frontier_exploration/CMakeFiles/frontier_exploration_genlisp.dir/build
-.PHONY : frontier_exploration_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named frontier_exploration_genpy
-
-# Build rule for target.
-frontier_exploration_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 frontier_exploration_genpy
-.PHONY : frontier_exploration_genpy
-
-# fast build rule for target.
-frontier_exploration_genpy/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/frontier_exploration_genpy.dir/build.make frontier_exploration/CMakeFiles/frontier_exploration_genpy.dir/build
-.PHONY : frontier_exploration_genpy/fast
-
-#=============================================================================
-# Target rules for targets named frontier_search_tests
-
-# Build rule for target.
-frontier_search_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 frontier_search_tests
-.PHONY : frontier_search_tests
-
-# fast build rule for target.
-frontier_search_tests/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/frontier_search_tests.dir/build.make frontier_exploration/CMakeFiles/frontier_search_tests.dir/build
-.PHONY : frontier_search_tests/fast
-
-#=============================================================================
-# Target rules for targets named geometry_tools_tests
-
-# Build rule for target.
-geometry_tools_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_tools_tests
-.PHONY : geometry_tools_tests
-
-# fast build rule for target.
-geometry_tools_tests/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/geometry_tools_tests.dir/build.make frontier_exploration/CMakeFiles/geometry_tools_tests.dir/build
-.PHONY : geometry_tools_tests/fast
-
-#=============================================================================
-# Target rules for targets named map_msgs_generate_messages_cpp
-
-# Build rule for target.
-map_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_cpp
-.PHONY : map_msgs_generate_messages_cpp
-
-# fast build rule for target.
-map_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make frontier_exploration/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
-.PHONY : map_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named map_msgs_generate_messages_lisp
-
-# Build rule for target.
-map_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_lisp
-.PHONY : map_msgs_generate_messages_lisp
-
-# fast build rule for target.
-map_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make frontier_exploration/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
-.PHONY : map_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named map_msgs_generate_messages_py
-
-# Build rule for target.
-map_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_py
-.PHONY : map_msgs_generate_messages_py
-
-# fast build rule for target.
-map_msgs_generate_messages_py/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/map_msgs_generate_messages_py.dir/build.make frontier_exploration/CMakeFiles/map_msgs_generate_messages_py.dir/build
-.PHONY : map_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_frontier_exploration
-
-# Build rule for target.
-run_tests_frontier_exploration: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_frontier_exploration
-.PHONY : run_tests_frontier_exploration
-
-# fast build rule for target.
-run_tests_frontier_exploration/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/run_tests_frontier_exploration.dir/build.make frontier_exploration/CMakeFiles/run_tests_frontier_exploration.dir/build
-.PHONY : run_tests_frontier_exploration/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_frontier_exploration_gtest
-
-# Build rule for target.
-run_tests_frontier_exploration_gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_frontier_exploration_gtest
-.PHONY : run_tests_frontier_exploration_gtest
-
-# fast build rule for target.
-run_tests_frontier_exploration_gtest/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/run_tests_frontier_exploration_gtest.dir/build.make frontier_exploration/CMakeFiles/run_tests_frontier_exploration_gtest.dir/build
-.PHONY : run_tests_frontier_exploration_gtest/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_frontier_exploration_gtest_costmap_tools_tests
-
-# Build rule for target.
-run_tests_frontier_exploration_gtest_costmap_tools_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_frontier_exploration_gtest_costmap_tools_tests
-.PHONY : run_tests_frontier_exploration_gtest_costmap_tools_tests
-
-# fast build rule for target.
-run_tests_frontier_exploration_gtest_costmap_tools_tests/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/run_tests_frontier_exploration_gtest_costmap_tools_tests.dir/build.make frontier_exploration/CMakeFiles/run_tests_frontier_exploration_gtest_costmap_tools_tests.dir/build
-.PHONY : run_tests_frontier_exploration_gtest_costmap_tools_tests/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_frontier_exploration_gtest_frontier_search_tests
-
-# Build rule for target.
-run_tests_frontier_exploration_gtest_frontier_search_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_frontier_exploration_gtest_frontier_search_tests
-.PHONY : run_tests_frontier_exploration_gtest_frontier_search_tests
-
-# fast build rule for target.
-run_tests_frontier_exploration_gtest_frontier_search_tests/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/run_tests_frontier_exploration_gtest_frontier_search_tests.dir/build.make frontier_exploration/CMakeFiles/run_tests_frontier_exploration_gtest_frontier_search_tests.dir/build
-.PHONY : run_tests_frontier_exploration_gtest_frontier_search_tests/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_frontier_exploration_gtest_geometry_tools_tests
-
-# Build rule for target.
-run_tests_frontier_exploration_gtest_geometry_tools_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_frontier_exploration_gtest_geometry_tools_tests
-.PHONY : run_tests_frontier_exploration_gtest_geometry_tools_tests
-
-# fast build rule for target.
-run_tests_frontier_exploration_gtest_geometry_tools_tests/fast:
-	$(MAKE) -f frontier_exploration/CMakeFiles/run_tests_frontier_exploration_gtest_geometry_tools_tests.dir/build.make frontier_exploration/CMakeFiles/run_tests_frontier_exploration_gtest_geometry_tools_tests.dir/build
-.PHONY : run_tests_frontier_exploration_gtest_geometry_tools_tests/fast
 
 #=============================================================================
 # Target rules for targets named hector_exploration_base_global_planner_plugin
@@ -1812,6 +1344,45 @@ hector_exploration_planner_gencfg: cmake_check_build_system
 hector_exploration_planner_gencfg/fast:
 	$(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_planner_gencfg.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_planner_gencfg.dir/build
 .PHONY : hector_exploration_planner_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named map_msgs_generate_messages_cpp
+
+# Build rule for target.
+map_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_cpp
+.PHONY : map_msgs_generate_messages_cpp
+
+# fast build rule for target.
+map_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
+.PHONY : map_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named map_msgs_generate_messages_lisp
+
+# Build rule for target.
+map_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_lisp
+.PHONY : map_msgs_generate_messages_lisp
+
+# fast build rule for target.
+map_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
+.PHONY : map_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named map_msgs_generate_messages_py
+
+# Build rule for target.
+map_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_msgs_generate_messages_py
+.PHONY : map_msgs_generate_messages_py
+
+# fast build rule for target.
+map_msgs_generate_messages_py/fast:
+	$(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_py.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/map_msgs_generate_messages_py.dir/build
+.PHONY : map_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named exploration_planner_node
@@ -1937,49 +1508,16 @@ help:
 	@echo "... topic_tools_generate_messages_py"
 	@echo "... ElevationMapping"
 	@echo "... ElevationMappingNode"
-	@echo "... _frontier_exploration_generate_messages_check_deps_ExploreTaskAction"
-	@echo "... _frontier_exploration_generate_messages_check_deps_ExploreTaskActionFeedback"
-	@echo "... _frontier_exploration_generate_messages_check_deps_ExploreTaskActionGoal"
-	@echo "... _frontier_exploration_generate_messages_check_deps_ExploreTaskActionResult"
-	@echo "... _frontier_exploration_generate_messages_check_deps_ExploreTaskFeedback"
-	@echo "... _frontier_exploration_generate_messages_check_deps_ExploreTaskGoal"
-	@echo "... _frontier_exploration_generate_messages_check_deps_ExploreTaskResult"
-	@echo "... _frontier_exploration_generate_messages_check_deps_Frontier"
-	@echo "... _frontier_exploration_generate_messages_check_deps_GetNextFrontier"
-	@echo "... _frontier_exploration_generate_messages_check_deps_UpdateBoundaryPolygon"
-	@echo "... _run_tests_frontier_exploration"
-	@echo "... _run_tests_frontier_exploration_gtest"
-	@echo "... _run_tests_frontier_exploration_gtest_costmap_tools_tests"
-	@echo "... _run_tests_frontier_exploration_gtest_frontier_search_tests"
-	@echo "... _run_tests_frontier_exploration_gtest_geometry_tools_tests"
 	@echo "... costmap_2d_gencfg"
 	@echo "... costmap_2d_generate_messages_cpp"
 	@echo "... costmap_2d_generate_messages_lisp"
 	@echo "... costmap_2d_generate_messages_py"
-	@echo "... costmap_tools_tests"
-	@echo "... explore_client"
-	@echo "... explore_costmap"
-	@echo "... explore_server"
-	@echo "... frontier_exploration_gencpp"
-	@echo "... frontier_exploration_generate_messages"
-	@echo "... frontier_exploration_generate_messages_cpp"
-	@echo "... frontier_exploration_generate_messages_lisp"
-	@echo "... frontier_exploration_generate_messages_py"
-	@echo "... frontier_exploration_genlisp"
-	@echo "... frontier_exploration_genpy"
-	@echo "... frontier_search_tests"
-	@echo "... geometry_tools_tests"
-	@echo "... map_msgs_generate_messages_cpp"
-	@echo "... map_msgs_generate_messages_lisp"
-	@echo "... map_msgs_generate_messages_py"
-	@echo "... run_tests_frontier_exploration"
-	@echo "... run_tests_frontier_exploration_gtest"
-	@echo "... run_tests_frontier_exploration_gtest_costmap_tools_tests"
-	@echo "... run_tests_frontier_exploration_gtest_frontier_search_tests"
-	@echo "... run_tests_frontier_exploration_gtest_geometry_tools_tests"
 	@echo "... hector_exploration_base_global_planner_plugin"
 	@echo "... hector_exploration_planner"
 	@echo "... hector_exploration_planner_gencfg"
+	@echo "... map_msgs_generate_messages_cpp"
+	@echo "... map_msgs_generate_messages_lisp"
+	@echo "... map_msgs_generate_messages_py"
 	@echo "... exploration_planner_node"
 	@echo "... move_base_gencfg"
 .PHONY : help
