@@ -779,7 +779,7 @@ void HectorExplorationPlanner::setupMapData()
 
   //Below code can be used to guarantee start pose is cleared. Somewhat risky.
   //@TODO: Make available through dynamic reconfigure
-  
+  /*
   std::vector<geometry_msgs::Point> points;
   costmap_ros_->getOrientedFootprint(points);
 
@@ -793,7 +793,7 @@ void HectorExplorationPlanner::setupMapData()
   else
     ROS_INFO("Failed to set costmap free");
   
-
+  */
   if ((this->map_width_ != costmap_->getSizeInCellsX()) || (this->map_height_ != costmap_->getSizeInCellsY())){
     map_width_ = costmap_->getSizeInCellsX();
     map_height_ = costmap_->getSizeInCellsY();
