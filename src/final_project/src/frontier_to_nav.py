@@ -82,8 +82,8 @@ class FrontierToNav:
     request = GetRobotTrajectory._request_class()
     response = self._getPath(request)
     path = response.trajectory.poses
+    self.path = path[0::PATH_INDEX]
     if len(path) > 0:
-      self.path = path[0::PATH_INDEX]
       self.path.append(path[len(path)-1]) 
       self.path.reverse()
 
