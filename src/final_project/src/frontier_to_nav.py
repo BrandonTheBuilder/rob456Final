@@ -19,10 +19,10 @@ from geometry_msgs.msg import PoseStamped
 import math
 NAV_TIMEOUT = 30
 OBSTACLE_RANGE = 2
-ANGLE_LIMIT = 0.5
+ANGLE_LIMIT = 0.75
 ESCAPE_SPEED = 1
 ESCAPE_DISTANCE = 5
-TURN_SPEED = 1
+TURN_SPEED = 0.25
 PATH_INDEX = 5 #Take every PATH_INDEX item from the path list
 
 
