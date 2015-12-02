@@ -3,7 +3,9 @@
 import rospy
 import std_msgs.msg
 import message_filters
+import math
 
+from tf.transformations import quaternion_from_euler
 from nav_msgs.msg import OccupancyGrid
 from geometry_msgs.msg import Point
 from sensor_msgs.msg import PointCloud
@@ -16,6 +18,9 @@ MAP_RESOLUTION = 0.05
 X_ORIGIN = -100
 Y_ORIGIN = -100
 OBSTACLE_DISTANCE = 2
+MIN_XY_GOAL_DIST = 1
+DIST_WEIGHT = 1 #THe weight distance from the robot has in calculating goal
+FOCUS_WEIGHT = 0 #The weight the focus of frontiers has on calculating goal
 
 class FrontierSearch(object):
     def __init__(self):
@@ -102,7 +107,9 @@ class MotionController(object):
     def callback(self, points, odom):
         x = odom.pose.pose.position.x
         y = odom.pose.pose.position.y
-        goals = [self.getDistance(point, (x,y)) for point in points.points]
+        xLocus = sum([point.x for point in points.points])/len(points.points)
+        yLocus = sum([point.y for point in points.points])/len(points.points)
+        goals = [self.getDistance(point, (x,y), (xLocus, yLocus)) for point in points.points]
         goals.sort(key=lambda x: x[1])
         goal = PoseStamped()
         h = std_msgs.msg.Header()
@@ -110,15 +117,28 @@ class MotionController(object):
         h.frame_id = 'map'
         goal.header = h
         # I am not sure how to find the best angle to look so I am defaulting to up
-        goal.pose.orientation.w = 1.0
+        angleToFocus = math.atan((yLocus-goals[0][0].y)/(xLocus-goals[0][0].x))
+        quaternion = quaternion_from_euler(0,0,angleToFocus)
+        goal.pose.orientation.x = quaternion[0]
+        goal.pose.orientation.y = quaternion[1]
+        goal.pose.orientation.w = quaternion[2]
+        goal.pose.orientation.w = quaternion[3]
         goal.pose.position.x = goals[0][0].x
         goal.pose.position.y = goals[0][0].y
         self.publishWaypoint(goal)
 
 
-    def getDistance(self, point, location):
+    def getDistance(self, point, location, locus):
+        #The first heuristic is the manhattan distance to the robot
         distance = abs(location[0]-point.x)+abs(location[1]-point.y)
-        return(point, distance)
+        if distance < MIN_XY_GOAL_DIST:
+            #If the point is closer than the minimum distance set the distance to a 
+            # ridiculously high price
+            distance = (MAP_WIDTH+MAP_HEIGHT)*MAP_RESOLUTION
+        #The second heuristic is the manhattan distance to the average of frontiers
+        frontiers = abs(locus[0]-point.x)+abs(locus[1]-point.y)
+        cost = distance*DIST_WEIGHT + frontiers*FOCUS_WEIGHT
+        return(point, cost)
 
 
 if __name__ == '__main__':

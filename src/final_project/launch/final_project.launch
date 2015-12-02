@@ -2,10 +2,12 @@
     <!-- Set all nodes to use sim time -->
     <param name="use_sim_time" value="true" />
     <!-- Launch World -->
-    <node pkg="stage_ros" type="stageros" name="simulator" args="$(find final_project)/testWorlds/mazeWorld.world">
+    <node pkg="stage_ros" type="stageros" name="simulator" args="$(find final_project)/testWorlds/manyDotsNoisyOdom.world">
     </node>
     <!-- Include nav_bundle launch file -->
     <include file="$(find nav_bundle)/launch/nav_bundle.launch"/>
+    <!-- Include frontier search node -->
+    <node pkg="frontier_search" type="frontier_search.py" name="frontier_search" output="screen"/>
     <!-- Visualize with rviz -->
     <node pkg="rviz" type="rviz" name="rviz" args="-d $(find final_project)/rvizsetup.rviz"/>
 </launch>
