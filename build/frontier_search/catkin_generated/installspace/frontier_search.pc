@@ -1,0 +1,8 @@
+prefix=/home/loren/Workspaces/final_catkin/install
+
+Name: frontier_search
+Description: Description of frontier_search
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/loren/Workspaces/final_catkin/install/lib 
+Requires: 

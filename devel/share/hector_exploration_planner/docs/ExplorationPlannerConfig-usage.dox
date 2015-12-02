@@ -4,7 +4,7 @@
   <param name="security_constant" type="double" value="0.5" />
   <param name="min_obstacle_dist" type="int" value="10" />
   <param name="plan_in_unknown" type="bool" value="True" />
-  <param name="explore_close_to_path" type="bool" value="False" />
+  <param name="explore_close_to_path" type="bool" value="True" />
   <param name="use_inflated_obstacles" type="bool" value="True" />
   <param name="goal_angle_penalty" type="int" value="50" />
   <param name="min_frontier_size" type="int" value="5" />

@@ -536,8 +536,8 @@ clean: hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_
 
 # All Build rule for target.
 hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_py.dir/all
-hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/all
 hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_cpp.dir/all
+hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages.dir/build.make hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages.dir/depend
 	$(MAKE) -f hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages.dir/build.make hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/loren/Workspaces/final_catkin/build/CMakeFiles 
@@ -572,10 +572,10 @@ clean: hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_
 # Target rules for target hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_cpp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/_hector_elevation_msgs_generate_messages_check_deps_ElevationGrid.dir/all
 hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_cpp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/_hector_elevation_msgs_generate_messages_check_deps_ElevationMapMetaData.dir/all
 hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_cpp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_cpp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_cpp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/_hector_elevation_msgs_generate_messages_check_deps_ElevationGrid.dir/all
 	$(MAKE) -f hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_cpp.dir/build.make hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_cpp.dir/build.make hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/loren/Workspaces/final_catkin/build/CMakeFiles  11 12
@@ -606,10 +606,10 @@ clean: hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_
 # Target rules for target hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/_hector_elevation_msgs_generate_messages_check_deps_ElevationGrid.dir/all
-hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/_hector_elevation_msgs_generate_messages_check_deps_ElevationMapMetaData.dir/all
 hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/_hector_elevation_msgs_generate_messages_check_deps_ElevationMapMetaData.dir/all
+hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/_hector_elevation_msgs_generate_messages_check_deps_ElevationGrid.dir/all
 	$(MAKE) -f hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/build.make hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/build.make hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/loren/Workspaces/final_catkin/build/CMakeFiles  13 14
@@ -641,9 +641,9 @@ clean: hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_
 
 # All Build rule for target.
 hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_py.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_py.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/_hector_elevation_msgs_generate_messages_check_deps_ElevationGrid.dir/all
-hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_py.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/_hector_elevation_msgs_generate_messages_check_deps_ElevationMapMetaData.dir/all
 hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_py.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_py.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/_hector_elevation_msgs_generate_messages_check_deps_ElevationMapMetaData.dir/all
+hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_py.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/_hector_elevation_msgs_generate_messages_check_deps_ElevationGrid.dir/all
 	$(MAKE) -f hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_py.dir/build.make hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_py.dir/build.make hector_navigation/hector_elevation_msgs/CMakeFiles/hector_elevation_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/loren/Workspaces/final_catkin/build/CMakeFiles  15 16 17
@@ -1379,21 +1379,21 @@ clean: simple_navigation_goals/CMakeFiles/actionlib_msgs_generate_messages_py.di
 # Target rules for target simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir
 
 # All Build rule for target.
+simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/roscpp_generate_messages_py.dir/all
-simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_generate_messages_cpp.dir/all
-simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_generate_messages_py.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_generate_messages_py.dir/all
+simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_generate_messages_cpp.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_generate_messages_lisp.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/all
+simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
 simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/move_base_msgs_generate_messages_py.dir/all
@@ -1431,21 +1431,21 @@ clean: simple_navigation_goals/CMakeFiles/base_link_navigation_client.dir/clean
 # Target rules for target simple_navigation_goals/CMakeFiles/map_navigation_client.dir
 
 # All Build rule for target.
+simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/roscpp_generate_messages_py.dir/all
-simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_elevation_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_generate_messages_cpp.dir/all
-simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_generate_messages_py.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_generate_messages_py.dir/all
+simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_generate_messages_cpp.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_generate_messages_lisp.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/all
+simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: hector_navigation/hector_driving_aid_markers/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
 simple_navigation_goals/CMakeFiles/map_navigation_client.dir/all: simple_navigation_goals/CMakeFiles/move_base_msgs_generate_messages_py.dir/all
@@ -3148,8 +3148,8 @@ clean: hector_navigation/hector_exploration_planner/CMakeFiles/costmap_2d_genera
 # Target rules for target hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_base_global_planner_plugin.dir
 
 # All Build rule for target.
-hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_base_global_planner_plugin.dir/all: hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_planner_gencfg.dir/all
 hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_base_global_planner_plugin.dir/all: hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_planner.dir/all
+hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_base_global_planner_plugin.dir/all: hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_planner_gencfg.dir/all
 	$(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_base_global_planner_plugin.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_base_global_planner_plugin.dir/depend
 	$(MAKE) -f hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_base_global_planner_plugin.dir/build.make hector_navigation/hector_exploration_planner/CMakeFiles/hector_exploration_base_global_planner_plugin.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/loren/Workspaces/final_catkin/build/CMakeFiles  21
@@ -3439,6 +3439,21 @@ final_project/CMakeFiles/move_base_gencfg.dir/clean:
 # clean rule for target.
 clean: final_project/CMakeFiles/move_base_gencfg.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory frontier_search
+
+# Convenience name for "all" pass in the directory.
+frontier_search/all:
+.PHONY : frontier_search/all
+
+# Convenience name for "clean" pass in the directory.
+frontier_search/clean:
+.PHONY : frontier_search/clean
+
+# Convenience name for "preinstall" pass in the directory.
+frontier_search/preinstall:
+.PHONY : frontier_search/preinstall
 
 #=============================================================================
 # Directory level rules for directory nav_bundle

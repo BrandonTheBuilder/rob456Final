@@ -388,6 +388,12 @@ frontier_exploration_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build
 //Value Computed by CMake
 frontier_exploration_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/frontier_exploration
 
+//Value Computed by CMake
+frontier_search_BINARY_DIR:STATIC=/home/loren/Workspaces/final_catkin/build/frontier_search
+
+//Value Computed by CMake
+frontier_search_SOURCE_DIR:STATIC=/home/loren/Workspaces/final_catkin/src/frontier_search
+
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/indigo/share/gencpp/cmake
 
@@ -782,7 +788,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=15
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=16
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

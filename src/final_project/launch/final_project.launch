@@ -6,9 +6,6 @@
     </node>
     <!-- Include nav_bundle launch file -->
     <include file="$(find nav_bundle)/launch/nav_bundle.launch"/>
-    <!-- Launch frontier exploration -->
-    <include file="$(find hector_exploration_node)/launch/exploration_planner.launch"/>
     <!-- Visualize with rviz -->
-    <node pkg="final_project" type="frontier_to_nav.py" name="frontier_to_nav" output="screen"/>
     <node pkg="rviz" type="rviz" name="rviz" args="-d $(find final_project)/rvizsetup.rviz"/>
 </launch>

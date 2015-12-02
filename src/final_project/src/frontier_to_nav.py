@@ -83,9 +83,9 @@ class FrontierToNav:
     response = self._getPath(request)
     path = response.trajectory.poses
     self.path = path[0::PATH_INDEX]
+    # self.path.reverse()
     if len(path) > 0:
       self.path.append(path[len(path)-1]) 
-      self.path.reverse()
 
 
   def publishGoal(self):
@@ -94,7 +94,7 @@ class FrontierToNav:
       self.currentGoal = self.path.pop()
       self.publishGlobalWaypoint(self.currentGoal)
       rospy.loginfo('[frontier_to_nav] Setting Goal: %s', self.currentGoal)
-      # del self.path[:]
+      del self.path[:]
     else:
       rospy.logwarn('[frontier_to_nav] There is no path to follow')
 

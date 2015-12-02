@@ -128,6 +128,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/loren/Workspaces/final_catkin/build/hector_navigation/hector_exploration_planner/cmake_install.cmake")
   INCLUDE("/home/loren/Workspaces/final_catkin/build/hector_navigation/hector_exploration_node/cmake_install.cmake")
   INCLUDE("/home/loren/Workspaces/final_catkin/build/final_project/cmake_install.cmake")
+  INCLUDE("/home/loren/Workspaces/final_catkin/build/frontier_search/cmake_install.cmake")
   INCLUDE("/home/loren/Workspaces/final_catkin/build/nav_bundle/cmake_install.cmake")
   INCLUDE("/home/loren/Workspaces/final_catkin/build/stagebot_2dnav/cmake_install.cmake")
 

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "frontier_search")
+set(frontier_search_MAINTAINER "loren <loren@todo.todo>")
+set(frontier_search_DEPRECATED "")
+set(frontier_search_VERSION "0.0.0")
+set(frontier_search_BUILD_DEPENDS "gmapping" "move_base" "roscpp" "rospy")
+set(frontier_search_RUN_DEPENDS "gmapping" "move_base" "roscpp" "rospy")
+set(frontier_search_BUILDTOOL_DEPENDS "catkin")
